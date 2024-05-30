@@ -5,7 +5,7 @@ import sys
 import time
 import warnings
 from random import sample
-from cgcnn.data import GraphDataset
+from TSGNN.data import GraphDataset
 import numpy as np
 import torch
 import torch.nn as nn
@@ -13,10 +13,10 @@ import torch.optim as optim
 from sklearn import metrics
 from torch.autograd import Variable
 from torch.optim.lr_scheduler import MultiStepLR
-from cgcnn.data import graph_collate
+from TSGNN.data import graph_collate
 
-from cgcnn.data import collate_pool, get_train_val_test_loader
-from cgcnn.model import CrystalGraphConvNet
+from TSGNN.data import collate_pool, get_train_val_test_loader
+from TSGNN.model import CrystalGraphConvNet
 
 parser = argparse.ArgumentParser(description='Crystal Graph Convolutional Neural Networks')
 parser.add_argument('data_options', metavar='OPTIONS', nargs='+',

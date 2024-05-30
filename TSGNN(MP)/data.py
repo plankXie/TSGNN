@@ -113,23 +113,6 @@ def get_train_val_test_loader(dataset, collate_fn=default_collate,
         return train_loader, val_loader, test_loader
     else:
         return train_loader, val_loader
-class AVerageMeter(object):
-    """Computes and stores the average and current value"""
-
-    def __init__(self):
-        self.reset()
-
-    def reset(self):
-        self.val = 0
-        self.avg = 0
-        self.sum = 0
-        self.count = 0
-
-    def update(self, val, n=1,b=0.8):
-        self.val = val
-        self.sum += val * n
-        self.count += n
-        self.avg = b*(self.sum / self.count)
 
 def collate_pool(dataset_list):
     """

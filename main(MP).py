@@ -14,9 +14,9 @@ from sklearn import metrics
 from torch.autograd import Variable
 from torch.optim.lr_scheduler import MultiStepLR
 
-from cgcnn.data import CIFData
-from cgcnn.data import collate_pool， get_train_val_test_loader
-from cgcnn.model import CrystalGraphConvNet
+from TSGNN.data import CIFData
+from TSGNN.data import collate_pool， get_train_val_test_loader
+from TSGNN.model import CrystalGraphConvNet
 
 parser = argparse.ArgumentParser(description='Crystal Graph Convolutional Neural Networks')
 parser.add_argument('data_options', metavar='OPTIONS', nargs='+',

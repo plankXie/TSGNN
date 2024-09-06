@@ -1,0 +1,2 @@
+TSGNN_OQMD.zip filter=lfs diff=lfs merge=lfs -text
+TSGNN_MP.zip filter=lfs diff=lfs merge=lfs -text
